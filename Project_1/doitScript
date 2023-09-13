@@ -1,0 +1,130 @@
+student@arm-u2204-try1:~/Desktop/Project 1$ ./doit 
+==>ls -l
+total 108
+-rwxrwxr-x 1 student student 18784 Sep  5 06:25 doit
+-rw-rw-r-- 1 student student  9779 Sep  5 06:25 doit.cpp
+-rw-rw-r-- 1 student student  2795 Sep  5 06:15 doit.txt
+-rw-rw-r-- 1 student student 16384 Sep  5 06:26 exit
+-rw-rw-r-- 1 student student   648 Aug 26 02:25 Fork.cpp
+-rwxrwxr-x 1 student student 15728 Sep  5 06:18 justBlank
+-rw-rw-r-- 1 student student   986 Aug 31 16:57 justBlank.cpp
+-rw-rw-r-- 1 student student   331 Sep  5 06:18 makefile
+-rw-rw-r-- 1 student student    55 Aug 30 22:57 Test.txt
+drwxrwxr-x 2 student student  4096 Aug 30 23:39 Tryme
+-rw-rw-r-- 1 student student 20480 Sep  5 06:25 typescript
+Wall Clock Time (ms): 1.0000 
+User CPU time: 0001 (ms)
+System CPU time: 0001 (ms)
+Times preempted Voulentarily: 1 
+Times preempted Unvoulentarily: 1 
+Major page faults: 0 
+Minor page faults: 119 
+Max residents (kb): 2588 
+==>cd ..
+Current working directory: /home/student/Desktop
+==>cd Project_1
+Current working directory: /home/student/Desktop/Project_1
+==>sleep 10 &
+[1], 53826, sleep
+==>sleep 5 &
+[2], 53827, sleep
+==>jobs
+{1}, 53826, sleep
+{2}, 53827, sleep
+==>cat Test.txt
+{1}, 53826, Completed
+BACKGROUND TASK STATS: 
+Wall Clock Time (Milliseconds): 11485.0000 
+User CPU time: 0001 (ms)
+System CPU time: 0001 (ms)
+Times preempted Voulentarily: 1 
+Times preempted Unvoulentarily: 1 
+Major page faults: 0 
+Minor page faults: 119 
+Max residents (kb): 2588 
+
+
+{1}, 53827, Completed
+BACKGROUND TASK STATS: 
+Wall Clock Time (Milliseconds): 8556.0000 
+User CPU time: 0001 (ms)
+System CPU time: 0001 (ms)
+Times preempted Voulentarily: 1 
+Times preempted Unvoulentarily: 1 
+Major page faults: 0 
+Minor page faults: 119 
+Max residents (kb): 2588 
+
+
+Hello my Name is Evan
+Tree, cat, dog, blue,
+red
+yellow
+Wall Clock Time (ms): 1.0000 
+User CPU time: 0004 (ms)
+System CPU time: 0004 (ms)
+Times preempted Voulentarily: 6 
+Times preempted Unvoulentarily: 3 
+Major page faults: 0 
+Minor page faults: 368 
+Max residents (kb): 2588 
+==>set prompt = >>>>>
+prompt changed
+>>>>>sleep 10
+Wall Clock Time (ms): 10003.0000 
+User CPU time: 0004 (ms)
+System CPU time: 0004 (ms)
+Times preempted Voulentarily: 8 
+Times preempted Unvoulentarily: 4 
+Major page faults: 0 
+Minor page faults: 450 
+Max residents (kb): 2588 
+>>>>>sleep 10 &
+[1], 53863, sleep
+>>>>>sleep 15 &
+[2], 53864, sleep
+>>>>>sleep 20 &
+[3], 53865, sleep
+>>>>>jobs
+{1}, 53863, sleep
+{2}, 53864, sleep
+{3}, 53865, sleep
+>>>>>exit
+Waiting for background processees to finish...
+[1], 53863, Completed
+BACKGROUND TASK STATS: 
+Wall Clock Time (Milliseconds): 13444.0000 
+User CPU time: 0004 (ms)
+System CPU time: 0004 (ms)
+Times preempted Voulentarily: 8 
+Times preempted Unvoulentarily: 4 
+Major page faults: 0 
+Minor page faults: 450 
+Max residents (kb): 2588 
+
+
+[1], 53864, Completed
+BACKGROUND TASK STATS: 
+Wall Clock Time (Milliseconds): 15003.0000 
+User CPU time: 0004 (ms)
+System CPU time: 0004 (ms)
+Times preempted Voulentarily: 8 
+Times preempted Unvoulentarily: 4 
+Major page faults: 0 
+Minor page faults: 450 
+Max residents (kb): 2588 
+
+
+[1], 53865, Completed
+BACKGROUND TASK STATS: 
+Wall Clock Time (Milliseconds): 20003.0000 
+User CPU time: 0004 (ms)
+System CPU time: 0004 (ms)
+Times preempted Voulentarily: 8 
+Times preempted Unvoulentarily: 4 
+Major page faults: 0 
+Minor page faults: 450 
+Max residents (kb): 2588 
+
+
+student@arm-u2204-try1:~/Desktop/Project 1$ 

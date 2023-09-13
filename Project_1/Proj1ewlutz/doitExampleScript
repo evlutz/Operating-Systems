@@ -1,0 +1,103 @@
+Script started on 2023-09-05 14:39:40+00:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="100" LINES="24"]
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/Project_1[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/Project_1[00m$ ./doit
+[?2004l
+==>date
+Tue Sep  5 02:39:49 PM UTC 2023
+Wall Clock Time (ms): 1.0000 
+User CPU time: 0000 (ms)
+System CPU time: 0000 (ms)
+Times preempted Voulentarily: 1 
+Times preempted Unvoulentarily: 1 
+Major page faults: 0 
+Minor page faults: 85 
+Max residents (kb): 1816 
+==>cd ..
+Current working directory: /home/student/Desktop
+==>ls
+ doit.cpp      'Project 1'   week1-proc.pdf
+ fork23-1.pdf   Project_1    xfce4-terminal-emulator.desktop
+Wall Clock Time (ms): 1.0000 
+User CPU time: 0000 (ms)
+System CPU time: 0000 (ms)
+Times preempted Voulentarily: 2 
+Times preempted Unvoulentarily: 2 
+Major page faults: 0 
+Minor page faults: 186 
+Max residents (kb): 2084 
+==>cd Project_1
+Current working directory: /home/student/Desktop/Project_1
+==>set pr rompt = >>>>>
+prompt changed
+>>>>>sdjkg
+Improper Command: sdjkg
+Wall Clock Time (ms): 1.0000 
+User CPU time: 0001 (ms)
+System CPU time: 0001 (ms)
+Times preempted Voulentarily: 3 
+Times preempted Unvoulentarily: 2 
+Major page faults: 0 
+Minor page faults: 283 
+Max residents (kb): 2424 
+>>>>>sleep 5 &
+[1], 55849, sleep
+>>>>>sleep 10 &
+[2], 55850, sleep
+>>>>>sleep 15 &
+{1}, 55849, Completed
+BACKGROUND TASK STATS: 
+Wall Clock Time (Milliseconds): 5972.0000 
+User CPU time: 0001 (ms)
+System CPU time: 0001 (ms)
+Times preempted Voulentarily: 3 
+Times preempted Unvoulentarily: 2 
+Major page faults: 0 
+Minor page faults: 283 
+Max residents (kb): 2424 
+
+
+[2], 55851, sleep
+>>>>>sleep 20 &
+[3], 55852, sleep
+>>>>>exit
+Waiting for background processees to finish...
+[1], 55850, Completed
+BACKGROUND TASK STATS: 
+Wall Clock Time (Milliseconds): 10002.0000 
+User CPU time: 0001 (ms)
+System CPU time: 0001 (ms)
+Times preempted Voulentarily: 3 
+Times preempted Unvoulentarily: 2 
+Major page faults: 0 
+Minor page faults: 283 
+Max residents (kb): 2424 
+
+
+[1], 55851, Completed
+BACKGROUND TASK STATS: 
+Wall Clock Time (Milliseconds): 15005.0000 
+User CPU time: 0001 (ms)
+System CPU time: 0001 (ms)
+Times preempted Voulentarily: 3 
+Times preempted Unvoulentarily: 2 
+Major page faults: 0 
+Minor page faults: 283 
+Max residents (kb): 2424 
+
+
+[1], 55852, Completed
+BACKGROUND TASK STATS: 
+Wall Clock Time (Milliseconds): 20002.0000 
+User CPU time: 0001 (ms)
+System CPU time: 0001 (ms)
+Times preempted Voulentarily: 3 
+Times preempted Unvoulentarily: 2 
+Major page faults: 0 
+Minor page faults: 283 
+Max residents (kb): 2424 
+
+
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/Project_1[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/Project_1[00m$ exit
+[?2004l
+exit
+
+Script done on 2023-09-05 14:41:05+00:00 [COMMAND_EXIT_CODE="127"]

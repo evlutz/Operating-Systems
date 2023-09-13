@@ -1,0 +1,1243 @@
+Script started on 2023-09-05 06:13:28+00:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="100" LINES="24"]
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/Project 1[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/Project 1[00m$ ./myexec[4Pmake[2Plscd Project\ 1/ls[Kmake./myexec[Kscript
+[?2004lScript started, output log file is 'typescript'.
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/Project 1[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/Project 1[00m$ man script
+[?2004l[?1049h[22;0;0t[?1h=SCRIPT(1)                                 User Commands                                 SCRIPT(1)[m
+[m
+[1mNAME[0m[m
+       script - make typescript of terminal session[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mscript[0m [options] [[4mfile[24m][m
+[m
+[1mDESCRIPTION[0m[m
+       [1mscript[0m makes a typescript of everything on your terminal session. The terminal data are[m
+       stored in raw form to the log file and information about timing to another (optional)[m
+       structured log file. The timing log file is necessary to replay the session later by[m
+       [1mscriptreplay[0m(1) and to store additional information about the session.[m
+[m
+       Since version 2.35, [1mscript[0m supports multiple streams and allows the logging of input and[m
+       output to separate files or all the one file. This version also supports new timing file[m
+       which records additional information. The command [1mscriptreplay[0m [1m--summary[0m then provides all[m
+       the information.[m
+[m
+       If the argument [4mfile[24m or option [1m--log-out[0m [4mfile[24m is given, [1mscript[0m saves the dialogue in this[m
+       [4mfile[24m. If no filename is given, the dialogue is saved in the file [4mtypescript[24m.[m
+[m
+       Note that logging input using [1m--log-in[0m or [1m--log-io[0m may record security-sensitive[m
+[7m Manual page script(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       information as the log file contains all terminal session input (e.g., passwords)[m
+[7m Manual page script(1) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       independently of the terminal echo flag setting.[m
+[7m Manual page script(1) line 3 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page script(1) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mOPTIONS[0m[m
+[7m Manual page script(1) line 5 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t[?2004h]0;student@arm-u2204-try1: ~/Desktop/Project 1[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/Project 1[00m$ man script[2P./myexecman script[Kmake clean
+[?2004lrm -f myexec Fork doit justBlank
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/Project 1[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/Project 1[00m$ make
+[?2004lmake: *** No rule to make target 'myexec.cpp', needed by 'myexec'.  Stop.
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/Project 1[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/Project 1[00m$ make clean
+[?2004lrm -f myexec Fork doit justBlank
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/Project 1[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/Project 1[00m$ make
+[?2004lmake: *** No rule to make target 'myexec.cpp', needed by 'myexec'.  Stop.
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/Project 1[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/Project 1[00m$ ./do[K[K[K[Kls
+[?2004ldoit.cpp  doit.txt  Fork.cpp  justBlank.cpp  makefile  Test.txt  [0m[01;34mTryme[0m  typescript
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/Project 1[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/Project 1[00m$ make
+[?2004lg++ -Wall -std=c++11 -o doit doit.cpp
+[01m[Kdoit.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[Kdoit.cpp:87:14:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wwrite-strings-Wwrite-strings]8;;[m[K]
+   87 |     prompt = [01;35m[K"==>"[m[K;
+      |              [01;35m[K^~~~~[m[K
+[01m[Kdoit.cpp:99:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KexecFlag[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   99 |         int [01;35m[KexecFlag[m[K = 0;
+      |             [01;35m[K^~~~~~~~[m[K
+[01m[Kdoit.cpp:96:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KendTimeBackground[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   96 |     struct timeval [01;35m[KendTimeBackground[m[K;
+      |                    [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+g++ -Wall -std=c++11 -o justBlank justBlank.cpp
+[01m[KjustBlank.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[KjustBlank.cpp:24:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Karg1[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   24 |     char *[01;35m[Karg1[m[K = argv[2];
+      |           [01;35m[K^~~~[m[K
+[01m[KjustBlank.cpp:25:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Karg2[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   25 |     char *[01;35m[Karg2[m[K = argv[3];
+      |           [01;35m[K^~~~[m[K
+[01m[KjustBlank.cpp:12:5:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kstatus[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   12 | int [01;35m[Kstatus[m[K;
+      |     [01;35m[K^~~~~~[m[K
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/Project 1[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/Project 1[00m$ make[2Plsmake[2Plsmake[K./doit 
+[?2004l==>ls
+doit  doit.cpp	doit.txt  Fork.cpp  justBlank  justBlank.cpp  makefile	Test.txt  Tryme  typescript
+Wall Clock Time (ms): 1.0000 
+User CPU time: 0001 (ms)
+System CPU time: 0001 (ms)
+Times preempted Voulentarily: 1 
+Times preempted Unvoulentarily: 1 
+Major page faults: 0 
+Minor page faults: 102 
+Max residents (kb): 2148 
+==>ls
+doit  doit.cpp	doit.txt  Fork.cpp  justBlank  justBlank.cpp  makefile	Test.txt  Tryme  typescript
+Wall Clock Time (ms): 1.0000 
+User CPU time: 0002 (ms)
+System CPU time: 0002 (ms)
+Times preempted Voulentarily: 2 
+Times preempted Unvoulentarily: 2 
+Major page faults: 0 
+Minor page faults: 205 
+Max residents (kb): 2148 
+==>clea
+Improper Command: clea
+Wall Clock Time (ms): 2.0000 
+User CPU time: 0002 (ms)
+System CPU time: 0002 (ms)
+Times preempted Voulentarily: 4 
+Times preempted Unvoulentarily: 3 
+Major page faults: 0 
+Minor page faults: 301 
+Max residents (kb): 2376 
+==>r exit
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/Project 1[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/Project 1[00m$ script -[Kexit
+[?2004lScript started, output log file is 'exit'.
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/Project 1[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/Project 1[00m$ ./myexec[Kman 2 script
+[?2004lNo manual entry for script in section 2
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/Project 1[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/Project 1[00m$ man script
+[?2004l[?1049h[22;0;0t[?1h=SCRIPT(1)                                 User Commands                                 SCRIPT(1)[m
+[m
+[1mNAME[0m[m
+       script - make typescript of terminal session[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mscript[0m [options] [[4mfile[24m][m
+[m
+[1mDESCRIPTION[0m[m
+       [1mscript1mscriptreplay[0m(1) and to store additional information about the session.[m
+[m
+       Since version 2.35, [1mscript[0m supports multiple streams and allows the logging of input and[m
+       output to separate files or all the one file. This version also supports new timing file[m
+       which records additional information. The command [1mscriptreplay[0m [1m--summary[0m then provides all[m
+       the information.[m
+[m
+       If the argument [4mfile[24m or option [1m--log-out[0m [4mfile[24m is given, [1mscript[0m saves the dialogue in this[m
+       [4mfile[24m. If no filename is given, the dialogue is saved in the file [4mtypescript[24m.[m
+[m
+       Note that logging input using [1m--log-in[0m or [1m--log-io[0m may record security-sensitive[m
+[7m Manual page script(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       information as the log file contains all terminal session input (e.g., passwords)[m
+[7m Manual page script(1) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       independently of the terminal echo flag setting.[m
+[7m Manual page script(1) line 3 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page script(1) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mOPTIONS[0m[m
+[7m Manual page script(1) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Below, the [4msize[24m argument may be followed by the multiplicative suffixes KiB (=1024), MiB[m
+[7m Manual page script(1) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       (=1024*1024), and so on for GiB, TiB, PiB, EiB, ZiB and YiB (the "iB" is optional, e.g.,[m
+[7m Manual page script(1) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       "K" has the same meaning as "KiB"), or the suffixes KB (=1000), MB (=1000*1000), and so on[m
+[7m Manual page script(1) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       for GB, TB, PB, EB, ZB and YB.[m
+[7m Manual page script(1) line 9 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page script(1) line 10 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-a[0m, [1m--append[0m[m
+[7m Manual page script(1) line 11 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Append the output to [4mfile[24m or to [4mtypescript[24m, retaining the prior contents.[m
+[7m Manual page script(1) line 12 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page script(1) line 13 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-c[0m, [1m--command[0m [4mcommand[24m[m
+[7m Manual page script(1) line 14 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Run the [4mcommand[24m rather than an interactive shell. This makes it easy for a script to[m
+[7m Manual page script(1) line 15 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           capture the output of a program that behaves differently when its stdout is not a tty.[m
+[7m Manual page script(1) line 16 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page script(1) line 17 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-E[0m, [1m--echo[0m [4mwhen[24m[m
+[7m Manual page script(1) line 18 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           This option controls the [1mECHO[0m flag for the slave end of the session’s pseudoterminal.[m
+[7m Manual page script(1) line 19 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           The supported modes are [4malways[24m, [4mnever[24m, or [4mauto[24m.[m
+[7m Manual page script(1) line 20 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page script(1) line 21 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           The default is [4mauto[24m — in this case, [1mECHO[0m enabled for the pseudoterminal slave; if the[m
+[7m Manual page script(1) line 22 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           current standard input is a terminal, [1mECHO[0m is disabled for it to prevent double echo;[m
+[7m Manual page script(1) line 23 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           if the current standard input is not a terminal (for example pipe: [1mecho[0m [1mdate[0m [1m|[0m [1mscript[0m)[m
+[7m Manual page script(1) line 24 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           then keeping [1mECHO[0m enabled for the pseudoterminal slave enables the standard input data[m
+[7m Manual page script(1) line 25 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           to be viewed on screen while being recorded to session log simultaneously.[m
+[7m Manual page script(1) line 26 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page script(1) line 27 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Note that 'never' mode affects content of the session output log, because users input[m
+[7m Manual page script(1) line 28 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           is not repeated on output.[m
+[7m Manual page script(1) line 29 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page script(1) line 30 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-e[0m, [1m--return[0m[m
+[7m Manual page script(1) line 31 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Return the exit status of the child process. Uses the same format as bash termination[m
+[7m Manual page script(1) line 32 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           on signal termination (i.e., exit status is 128 + the signal number). The exit status[m
+[7m Manual page script(1) line 33 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           of the child process is always stored in the type script file too.[m
+[7m Manual page script(1) line 34 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page script(1) line 35 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-f[0m, [1m--flush[0m[m
+[7m Manual page script(1) line 36 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Flush output after each write. This is nice for telecooperation: one person does[m
+[7m Manual page script(1) line 37 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           [1mmkfifo[0m [1mfoo;[0m [1mscript[0m [1m-f[0m [1mfoo[0m, and another can supervise in real-time what is being done[m
+[7m Manual page script(1) line 38 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           using [1mcat[0m [1mfoo[0m. Note that flush has an impact on performance; it’s possible to use[m
+[7m Manual page script(1) line 39 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           [1mSIGUSR1[0m to flush logs on demand.[m
+[7m Manual page script(1) line 40 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page script(1) line 41 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--force[0m[m
+[7m Manual page script(1) line 42 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Allow the default output file [4mtypescript[24m to be a hard or symbolic link. The command[m
+[7m Manual page script(1) line 43 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           will follow a symbolic link.[m
+[7m Manual page script(1) line 44 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page script(1) line 45 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-B[0m, [1m--log-io[0m [4mfile[24m[m
+[7m Manual page script(1) line 46 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Log input and output to the same [4mfile[24m. Note, this option makes sense only if[m
+[7m Manual page script(1) line 47 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           [1m--log-timing[0m is also specified, otherwise it’s impossible to separate output and input[m
+[7m Manual page script(1) line 48 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           streams from the log [4mfile[24m.[m
+[7m Manual page script(1) line 49 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page script(1) line 50 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-I[0m, [1m--log-in[0m [4mfile[24m[m
+[7m Manual page script(1) line 51 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Log input to the [4mfile[24m. The log output is disabled if only [1m--log-in[0m specified.[m
+[7m Manual page script(1) line 52 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t[?2004h]0;student@arm-u2204-try1: ~/Desktop/Project 1[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/Project 1[00m$ man script2 script[4P./myexec[4Pmake./myexecman 2 script[2Pscript[Kmake
+[?2004lg++ -Wall -std=c++11 -o doit doit.cpp
+[01m[Kdoit.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[Kdoit.cpp:87:14:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wwrite-strings-Wwrite-strings]8;;[m[K]
+   87 |     prompt = [01;35m[K"==>"[m[K;
+      |              [01;35m[K^~~~~[m[K
+[01m[Kdoit.cpp:99:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KexecFlag[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   99 |         int [01;35m[KexecFlag[m[K = 0;
+      |             [01;35m[K^~~~~~~~[m[K
+[01m[Kdoit.cpp:96:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KendTimeBackground[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   96 |     struct timeval [01;35m[KendTimeBackground[m[K;
+      |                    [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/Project 1[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/Project 1[00m$ make
+[?2004lg++ -Wall -std=c++11 -o doit doit.cpp
+[01m[Kdoit.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[Kdoit.cpp:85:14:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wwrite-strings-Wwrite-strings]8;;[m[K]
+   85 |     prompt = [01;35m[K"==>"[m[K;
+      |              [01;35m[K^~~~~[m[K
+[01m[Kdoit.cpp:95:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KexecFlag[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   95 |         int [01;35m[KexecFlag[m[K = 0;
+      |             [01;35m[K^~~~~~~~[m[K
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/Project 1[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/Project 1[00m$ make
+[?2004lg++ -Wall -std=c++11 -o doit doit.cpp
+[01m[Kdoit.   95 |         int [01;35m[KexecFlag[m[K = 0;
+      |             [01;35m[K^~~~~~~~[m[K
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/Project 1[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/Project 1[00m$ make
+[?2004lg++ -Wall -std=c++11 -o doit doit.cpp
+[01m[Kdoit.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[Kdoit.cpp:85:14:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wwrite-strings-Wwrite-strings]8;;[m[K]
+   85 |     prompt = [01;35m[K"==>"[m[K;
+      |              [01;35m[K^~~~~[m[K
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/Project 1[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/Project 1[00m$ maken script2 script[4P./myexec[4Pmake./myexecman 2 script[2Pscriptke[K[K./doit 
+[?2004l==>ls
+doit	  doit.txt  Fork.cpp   justBlank.cpp  Test.txt	typescript
+doit.cpp  exit	    justBlank  makefile       Tryme
+Wall Clock Time (ms): 1.0000 
+User CPU time: 0001 (ms)
+System CPU time: 0001 (ms)
+Times preempted Voulentarily: 1 
+Times preempted Unvoulentarily: 0 
+Major page faults: 0 
+Minor page faults: 104 
+Max residents (kb): 2148 
+==>ls  cd ..
+Current working directory: /home/student/Desktop
+==>cd PR	 roject 1
+Directory not in location==>ls
+ doit.cpp   fork23-1.pdf  'Project 1'   week1-proc.pdf	 xfce4-terminal-emulator.desktop
+Wall Clock Time (ms): 1.0000 
+User CPU time: 0002 (ms)
+System CPU time: 0002 (ms)
+Times preempted Voulentarily: 2 
+Times preempted Unvoulentarily: 1 
+Major page faults: 0 
+Minor page faults: 206 
+Max residents (kb): 2148 
+==>exit
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/Project 1[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/Project 1[00m$ ./doit [3Pmake./doit [K[K[K[K[K[K[K
+[?2004l[?2004h]0;student@arm-u2204-try1: ~/Desktop/Project 1[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/Project 1[00m$ 
+[?2004l[?2004h]0;student@arm-u2204-try1: ~/Desktop/Project 1[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/Project 1[00m$ 
+[?2004l[?2004h]0;student@arm-u2204-try1: ~/Desktop/Project 1[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/Project 1[00m$ 
+[?2004l[?2004h]0;student@arm-u2204-try1: ~/Desktop/Project 1[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/Project 1[00m$ 
+[?2004l[?2004h]0;student@arm-u2204-try1: ~/Desktop/Project 1[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/Project 1[00m$ 
+[?2004l[?2004h]0;student@arm-u2204-try1: ~/Desktop/Project 1[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/Project 1[00m$ 
+[?2004l[?2004h]0;student@arm-u2204-try1: ~/Desktop/Project 1[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/Project 1[00m$ 
+[?2004l[?2004h]0;student@arm-u2204-try1: ~/Desktop/Project 1[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/Project 1[00m$ 
+[?2004l[?2004h]0;student@arm-u2204-try1: ~/Desktop/Project 1[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/Project 1[00m$ 
+[?2004l[?2004h]0;student@arm-u2204-try1: ~/Desktop/Project 1[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/Project 1[00m$ 
+[?2004l[?2004h]0;student@arm-u2204-try1: ~/Desktop/Project 1[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/Project 1[00m$ 
+[?2004l[?2004h]0;student@arm-u2204-try1: ~/Desktop/Project 1[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/Project 1[00m$ 
+[?2004l[?2004h]0;student@arm-u2204-try1: ~/Desktop/Project 1[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/Project 1[00m$ 
+[?2004l[?2004h]0;student@arm-u2204-try1: ~/Desktop/Project 1[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/Project 1[00m$ ./doit 
+[?2004l==>ls -l
+total 108
+-rwxrwxr-x 1 student student 18784 Sep  5 06:25 doit
+-rw-rw-r-- 1 student student  9779 Sep  5 06:25 doit.cpp
+-rw-rw-r-- 1 student student  2795 Sep  5 06:18 makefile
+-rw-rw-r-- 1 student student    55 Aug 30 22:57 Test.txt
+drwxrwxr-x 2 student student  4096 Aug 30 23:39 Tryme
+-rw-rw-r-- 1 student student 20480 Sep  5 06:25 typescript
+Wall Clock Time (ms): 1.0000 
+User CPU time: 0001 (ms)
+System CPU time: 0001 (ms)
+Times preempted Voulentarily: 1 
+Times preempted Unvoulentarily: 1 
+Major page faults: 0 
+Minor page faults: 119 
+Max residents (kb): 2588 
+==>cd ..
+Current working directory: /home/student/Desktop
+==>cd Project_1
+Current working directory: /home/student/Desktop/Project_1
+==>sleep 10 &
+[1], 53826, sleep
+==>sleep 5 &
+[2], 53827, sleep
+==>jobs
+{1}, 53826, sleep
+{2}, 53827, sleep
+==>ls  cat Test.txt
+{1}, 53826, Completed
+BACKGROUND TASK STATS: 
+Wall Clock Time (Milliseconds): 11485.0000 
+User CPU time: 0001 (ms)
+System CPU time: 0001 (ms)
+Times preempted Voulentarily: 1 
+Times preempted Unvoulentarily: 1 
+Major page faults: 0 
+Minor page faults: 119 
+Max residents (kb): 2588 
+
+
+{1}, 53827, Completed
+BACKGROUND TASK STATS: 
+Wall Clock Time (Milliseconds): 8556.0000 
+User CPU time: 0001 (ms)
+System CPU time: 0001 (ms)
+Times preempted Voulentarily: 1 
+Times preempted Unvoulentarily: 1 
+Major page faults: 0 
+Minor page faults: 119 
+Max residents (kb): 2588 
+
+
+Hello my Name is Evan
+Tree, cat, dog, blue,
+red
+yellow
+Wall Clock Time (ms): 1.0000 
+User CPU time: 0004 (ms)
+System CPU time: 0004 (ms)
+Times preempted Voulentarily: 6 
+Times preempted Unvoulentarily: 3 
+Major page faults: 0 
+Minor page faults: 368 
+Max residents (kb): 2588 
+==>set prompt = >>>>>
+prompt changed
+>>>>>sleep 10
+Wall Clock Time (ms): 10003.0000 
+User CPU time: 0004 (ms)
+System CPU time: 0004 (ms)
+Times preempted Voulentarily: 8 
+Times preempted Unvoulentarily: 4 
+Major page faults: 0 
+Minor page faults: 450 
+Max residents (kb): 2588 
+>>>>>sleep 10 &
+[1], 53863, sleep
+>>>>>sleep 15 &
+[2], 53864, sleep
+>>>>>sleep 20 &
+[3], 53865, sleep
+>>>>>exit    jobs
+{1}, 53863, sleep
+{2}, 53864, sleep
+{3}, 53865, sleep
+>>>>>exit
+Waiting for background processees to finish...
+[1], 53863, Completed
+BACKGROUND TASK STATS: 
+Wall Clock Time (Milliseconds): 13444.0000 
+User CPU time: 0004 (ms)
+System CPU time: 0004 (ms)
+Times preempted Voulentarily: 8 
+Times preempted Unvoulentarily: 4 
+Major page faults: 0 
+Minor page faults: 450 
+Max residents (kb): 2588 
+
+
+[1], 53864, Completed
+BACKGROUND TASK STATS: 
+Wall Clock Time (Milliseconds): 15003.0000 
+User CPU time: 0004 (ms)
+System CPU time: 0004 (ms)
+Times preempted Voulentarily: 8 
+Times preempted Unvoulentarily: 4 
+Major page faults: 0 
+Minor page faults: 450 
+Max residents (kb): 2588 
+
+
+[1], 53865, Completed
+BACKGROUND TASK STATS: 
+Wall Clock Time (Milliseconds): 20003.0000 
+User CPU time: 0004 (ms)
+System CPU time: 0004 (ms)
+Times preempted Voulentarily: 8 
+Times preempted Unvoulentarily: 4 
+Major page faults: 0 
+Minor page faults: 450 
+Max residents (kb): 2588 
+
+
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/Project 1[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/Project 1[00m$ make
+[?2004lmake: Nothing to be done for 'all'.
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/Project 1[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/Project 1[00m$ make clean
+[?2004lrm -f doit justBlank
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/Project 1[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/Project 1[00m$ make
+[?2004lg++ -Wall -std=c++11 -o doit doit.cpp
+[01m[Kdoit.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[Kdoit.cpp:85:14:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wwrite-strings-Wwrite-strings]8;;[m[K]
+   85 |     prompt = [01;35m[K"==>"[m[K;
+      |              [01;35m[K^~~~~[m[K
+g++ -Wall -std=c++11 -o justBlank justBlank.cpp
+[01m[KjustBlank.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01mions.html#index-Wwrite-strings-Wwrite-strings]8;;[m[K]
+   85 |     prompt = [01;35m[K"==>"[m[K;
+      |              [01;35m[K^~~~~[m[K
+g++ -Wall -std=c++11 -o justBlank justBlank.cpp
+[01m[KjustBlank.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[KjustBlank.cpp:24:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Karg1[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   24 |     char *[01;35m[Karg1[m[K = argv[2];
+      |           [01;35m[K^~~~[m[K
+[01m[KjustBlank.cpp:25:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Karg2[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   25 |     char *[01;35m[Karg2[m[K = argv[3];
+      |           [01;35m[K^~~~[m[K
+[01m[KjustBlank.cpp:12:5:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kstatus[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   12 | int [01;35m[Kstatus[m[K;
+      |     [01;35m[K^~~~~~[m[K
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/Project 1[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/Project 1[00m$ make clean[K./doit 
+[?2004l==>ls
+doit	  doitScript  exit	justBlank      makefile  Tryme
+doit.cpp  doit.txt    Fork.cpp	justBlank.cpp  Test.txt  typescript
+Wall Clock Time (ms): 1.0000 
+User CPU time: 0001 (ms)
+System CPU time: 0001 (ms)
+Times preempted Voulentarily: 1 
+Times preempted Unvoulentarily: 1 
+Major page faults: 0 
+Minor page faults: 104 
+Max residents (kb): 2152 
+==>sleep 5 &
+[1], 54376, sleep
+==>s ls
+doit	  doitScript  exit	justBlank      makefile  Tryme
+doit.cpp  doit.txt    Fork.cpp	justBlank.cpp  Test.txt  typescript
+Wall Clock Time (ms): 1.0000 
+User CPU time: 0002 (ms)
+System CPU time: 0002 (ms)
+Times preempted Voulentarily: 2 
+Times preempted Unvoulentarily: 2 
+Major page faults: 0 
+Minor page faults: 208 
+Max residents (kb): 2156 
+==>ls
+doit	  doitScript  exit	justBlank      makefile  Tryme
+doit.cpp  doit.txt    Fork.cpp	justBlank.cpp  Test.txt  typescript
+Wall Clock Time (ms): 1.0000 
+User CPU time: 0003 (ms)
+System CPU time: 0003 (ms)
+Times preempted Voulentarily: 3 
+Times preempted Unvoulentarily: 3 
+Major page faults: 0 
+Minor page faults: 312 
+Max residents (kb): 2156 
+==>ls
+{1}, 54376, Completed
+BACKGROUND TASK STATS: 
+Wall Clock Time (Milliseconds): 9463.0000 
+User CPU time: 0003 (ms)
+System CPU time: 0003 (ms)
+Times preempted Voulentarily: 3 
+Times preempted Unvoulentarily: 3 
+Major page faults: 0 
+Minor page faults: 312 
+Max residents (kb): 2156 
+
+
+doit	  doitScript  exit	justBlank      makefile  Tryme
+doit.cpp  doit.txt    Fork.cpp	justBlank.cpp  Test.txt  typescript
+Wall Clock Time (ms): 1.0000 
+User CPU time: 0005 (ms)
+System CPU time: 0005 (ms)
+Times preempted Voulentarily: 7 
+Times preempted Unvoulentarily: 3 
+Major page faults: 1 
+Minor page faults: 497 
+Max residents (kb): 2156 
+==>make    exit
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/Project 1[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/Project 1[00m$ make clean
+[?2004lrm -f doit justBlank
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/Project 1[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/Project 1[00m$ make
+[?2004lg++ -Wall -std=c++11 -o doit doit.cpp
+[01m[Kdoit.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[Kdoit.cpp:85:14:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wwrite-strings-Wwrite-strings]8;;[m[K]
+   85 |     prompt = [01;35m[K"==>"[m[K;
+      |              [01;35m[K^~~~~[m[K
+g++ -Wall -std=c++11 -o justBlank justBlank.cpp
+[01m[KjustBlank.cpp:[m[K In function ‘[01m[Kint main(int, cgv[2];
+      |           [01;35m[K^~~~[m[K
+[01m[KjustBlank.cpp:25:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Karg2[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   25 |     char *[01;35m[Karg2[m[K = argv[3];
+      |           [01;35m[K^~~~[m[K
+[01m[KjustBlank.cpp:12:5:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kstatus[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   12 | int [01;35m[Kstatus[m[K;
+      |     [01;35m[K^~~~~~[m[K
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/Project 1[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/Project 1[00m$ make clean[3P./doit 
+[?2004l==>ls
+doit	  doitScript  exit	justBlank      makefile  Tryme
+doit.cpp  doit.txt    Fork.cpp	justBlank.cpp  Test.txt  typescript
+Wall Clock Time (ms): 1.0000 
+User CPU time: 0001 (ms)
+System CPU time: 0001 (ms)
+Times preempted Voulentarily: 1 
+Times preempted Unvoulentarily: 1 
+Major page faults: 0 
+Minor page faults: 105 
+Max residents (kb): 2152 
+==>ls -l
+total 140
+-rwxrwxr-x 1 student student 18784 Sep  5 07:37 doit
+-rw-rw-r-- 1 student student  9779 Sep  5 06:25 doit.cpp
+-rw-rw-r-- 1 student student  3414 Sep  5 06:30 doitScript
+-rw-rw-r-- 1 student student  2795 Sep  5 06:15 doit.txt
+-rw-rw-r-- 1 student student 24576 Sep  5 07:37 exit
+-rw-rw-r-- 1 student student   648 Aug 26 02:25 Fork.cpp
+-rwxrwxr-x 1 student student 15728 Sep  5 07:37 justBlank
+-rw-rw-r-- 1 student student   986 Aug 31 16:57 justBlank.cpp
+-rw-rw-r-- 1 student student   331 Sep  5 06:18 makefile
+-rw-rw-r-- 1 student student    55 Aug 30 22:57 Test.txt
+drwxrwxr-x 2 student student  4096 Aug 30 23:39 Tryme
+-rw-rw-r-- 1 student student 32768 Sep  5 07:37 typescript
+Wall Clock Time (ms): 3.0000 
+User CPU time: 0002 (ms)
+System CPU time: 0002 (ms)
+Times preempted Voulentarily: 3 
+Times preempted Unvoulentarily: 2 
+Major page faults: 0 
+Minor page faults: 224 
+Max residents (kb): 2576 
+==>sleep 5 &
+[1], 54517, sleep
+==>sleep 10 &
+[2], 54518, sleep
+==>sleep 15 &
+{1}, 54517, Completed
+BACKGROUND TASK STATS: 
+Wall Clock Time (Milliseconds): 6902.0000 
+User CPU time: 0002 (ms)
+System CPU time: 0002 (ms)
+Times preempted Voulentarily: 3 
+Times preempted Unvoulentarily: 2 
+Major page faults: 0 
+Minor page faults: 224 
+Max residents (kb): 2576 
+
+
+[2], 54519, sleep
+==>ls
+doit	  doitScript  exit	justBlank      makefile  Tryme
+doit.cpp  doit.txt    Fork.cpp	justBlank.cpp  Test.txt  typescript
+Wall Clock Time (ms): 1.0000 
+User CPU time: 0003 (ms)
+System CPU time: 0003 (ms)
+Times preempted Voulentarily: 6 
+Times preempted Unvoulentarily: 3 
+Major page faults: 0 
+Minor page faults: 412 
+Max residents (kb): 2576 
+==>exit    ls
+{1}, 54518, Completed
+BACKGROUND TASK STATS: 
+Wall Clock Time (Milliseconds): 15024.0000 
+User CPU time: 0003 (ms)
+System CPU time: 0003 (ms)
+Times preempted Voulentarily: 6 
+Times preempted Unvoulentarily: 3 
+Major page faults: 0 
+Minor page faults: 412 
+Max residents (kb): 2576 
+
+
+doit	  doitScript  exit	justBlank      makefile  Tryme
+doit.cpp  doit.txt    Fork.cpp	justBlank.cpp  Test.txt  typescript
+Wall Clock Time (ms): 1.0000 
+User CPU time: 0003 (ms)
+System CPU time: 0003 (ms)
+Times preempted Voulentarily: 9 
+Times preempted Unvoulentarily: 4 
+Major page faults: 0 
+Minor page faults: 601 
+Max residents (kb): 2576 
+==>^[[A^[[B^[[B^[[B^[[B
+{1}, 54519, Completed
+BACKGROUND TASK STATS: 
+Wall Clock Time (Milliseconds): 99364.0000 
+User CPU time: 0003 (ms)
+System CPU time: 0003 (ms)
+Times preempted Voulentarily: 9 
+Times preempted Unvoulentarily: 4 
+Major page faults: 0 
+Minor page faults: 601 
+Max residents (kb): 2576 
+
+
+Improper Command: [A[B[B[B[B
+Wall Clock Time (ms): 1.0000 
+User CPU time: 0005 (ms)
+System CPU time: 0005 (ms)
+Times preempted Voulentarily: 12 
+Times preempted Unvoulentarily: 4 
+Major page faults: 0 
+Minor page faults: 782 
+Max residents (kb): 2576 
+==>we  exit
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/Project 1[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/Project 1[00m$ ls
+[?2004l[0m[01;32mdoit[0m      doitScript  exit      [01;32mjustBlank[0m      makefile  [01;34mTryme[0m
+doit.cpp  doit.txt    Fork.cpp  justBlank.cpp  Test.txt  typescript
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/Project 1[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/Project 1[00m$ make clean
+[?2004lrm -f doit justBlank
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/Project 1[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/Project 1[00m$ ./do[K[K[K[Kmake
+[?2004lg++ -Wall -std=c++11 -o doit doit.cpp
+[01m[Kdoit.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[Kdoit.cpp:85:14:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wwrite-strings-Wwrite-strings]8;;[m[K]
+   85 |     prompt = [01;35m[K"==>"[m[K;
+      |              [01;35m[K^~~~~[m[K
+g++ -Wall -std=c++11 -o justBlank justBlank.cpp
+[01m[KjustBlank.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[KjustBlank.cpp:24:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Karg1[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   24 |     char *[01;35m[Karg1[m[K = argv[2];
+      |           [01;35m[K^~~~[m[K
+[01m[KjustBlank.cpp:25:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Karg2[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   25 |     char *[01;35m[Karg2[m[K = argv[3];
+      |           [01;35m[K^~~~[m[K
+[01m[KjustBlank.cpp:12:5:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kstatus[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   12 | int [01;35m[Kstatus[m[K;
+      |     [01;35m[K^~~~~~[m[K
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/Project 1[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/Project 1[00m$ ./doit
+[?2004l==>ls
+doit	  doitScript  exit	justBlank      makefile  Tryme
+doit.cpp  doit.txt    Fork.cpp	justBlank.cpp  Test.txt  typescript
+Wall Clock Time (ms): 1.0000 
+User CPU time: 0000 (ms)
+System CPU time: 0000 (ms)
+Times preempted Voulentarily: 1 
+Times preempted Unvoulentarily: 0 
+Major page faults: 0 
+Minor page faults: 107 
+Max residents (kb): 2156 
+==>sleep 5
+Wall Clock Time (ms): 5001.0000 
+User CPU time: 0000 (ms)
+System CPU time: 0000 (ms)
+Times preempted Voulentarily: 3 
+Times preempted Unvoulentarily: 1 
+Major page faults: 0 
+Minor page faults: 191 
+Max residents (kb): 2156 
+==>sleep 5 &
+[1], 54561, sleep
+==>sleep 10 &
+[2], 54562, sleep
+==>sleep 15 &
+{1}, 54561, Completed
+BACKGROUND TASK STATS: 
+Wall Clock Time (Milliseconds): 5698.0000 
+User CPU time: 0000 (ms)
+System CPU time: 0000 (ms)
+Times preempted Voulentarily: 3 
+Times preempted Unvoulentarily: 1 
+Major page faults: 0 
+Minor page faults: 191 
+Max residents (kb): 2156 
+
+
+[2], 54563, sleep
+==>exit
+Waiting for background processees to finish...
+[1], 54562, Completed
+BACKGROUND TASK STATS: 
+Wall Clock Time (Milliseconds): 10003.0000 
+User CPU time: 0000 (ms)
+System CPU time: 0000 (ms)
+Times preempted Voulentarily: 3 
+Times preempted Unvoulentarily: 1 
+Major page faults: 0 
+Minor page faults: 191 
+Max residents (kb): 2156 
+
+
+[1], 54563, Completed
+BACKGROUND TASK STATS: 
+Wall Clock Time (Milliseconds): 15005.0000 
+User CPU time: 0000 (ms)
+System CPU time: 0000 (ms)
+Times preempted Voulentarily: 3 
+Times preempted Unvoulentarily: 1 
+Major page faults: 0 
+Minor page faults: 191 
+Max residents (kb): 2156 
+
+
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/Project 1[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/Project 1[00m$ make
+[?2004lmake: Nothing to be done for 'all'.
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/Project 1[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/Project 1[00m$ make clean
+[?2004lrm -f doit justBlank
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/Project 1[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/Project 1[00m$ make clean[K./doit
+[?2004lbash: ./doit: No such file or directory
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/Project 1[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/Project 1[00m$ make
+[?2004lg++ -Wall -std=c++11 -o doit doit.cpp
+[01m[Kdoit.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[Kdoit.cpp:85:14:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wwrite-strings-Wwrite-strings]8;;[m[K]
+   85 |     prompt = [01;35m[K"==>"[m[K;
+      |              [01;35m[K^~~~~[m[K
+g++ -Wall -std=c++11 -o justBlank justBlank.cpp
+[01m[KjustBlank.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[KjustBlank.cpp:24:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Karg1[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   24 |     char *[01;35m[Karg1[m[K = argv[2];
+      |           [01;35m[K^~~~[m[K
+[01m[KjustBlank.cpp:25:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Karg2[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   25 |     char *[01;35m[Karg2[m[K = argv[3];
+      |           [01;35m[K^~~~[m[K
+[01m[KjustBlank.cpp:12:5:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kstatus[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   12 | int [01;35m[Kstatus[m[K;
+      |     [01;35m[K^~~~~~[m[K
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/Project 1[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/Project 1[00m$ ./dot
+[?2004lbash: ./dot: No such file or directory
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/Project 1[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/Project 1[00m$ ./dot[Kit
+[?2004l==>ls
+doit	  doitScript  exit	justBlank      makefile  Tryme
+doit.cpp  doit.txt    Fork.cpp	justBlank.cpp  Test.txt  typescript
+Wall Clock Time (ms): 1.0000 
+User CPU time: 0001 (ms)
+System CPU time: 0001 (ms)
+Times preempted Voulentarily: 1 
+Times preempted Unvoulentarily: 1 
+Major page faults: 0 
+Minor page faults: 104 
+Max residents (kb): 2152 
+==>ls
+doit	  doitScript  exit	justBlank      makefile  Tryme
+doit.cpp  doit.txt    Fork.cpp	justBlank.cpp  Test.txt  typescript
+Wall Clock Time (ms): 1.0000 
+User CPU time: 0002 (ms)
+System CPU time: 0002 (ms)
+Times preempted Voulentarily: 2 
+Times preempted Unvoulentarily: 2 
+Major page faults: 0 
+Minor page faults: 208 
+Max residents (kb): 2152 
+==>sleep 5 &
+[1], 54692, sleep
+==>ls
+doit	  doitScript  exit	justBlank      makefile  Tryme
+doit.cpp  doit.txt    Fork.cpp	justBlank.cpp  Test.txt  typescript
+Wall Clock Time (ms): 1.0000 
+User CPU time: 0003 (ms)
+System CPU time: 0003 (ms)
+Times preempted Voulentarily: 3 
+Times preempted Unvoulentarily: 2 
+Major page faults: 0 
+Minor page faults: 311 
+Max residents (kb): 2152 
+==>ls
+doit	  doitScript  exit	justBlank      makefile  Tryme
+doit.cpp  doit.txt    Fork.cpp	justBlank.cpp  Test.txt  typescript
+Wall Clock Time (ms): 2.0000 
+User CPU time: 0004 (ms)
+System CPU time: 0004 (ms)
+Times preempted Voulentarily: 4 
+Times preempted Unvoulentarily: 3 
+Major page faults: 0 
+Minor page faults: 414 
+Max residents (kb): 2152 
+==>sleep 5 &
+{1}, 54692, Completed
+BACKGROUND TASK STATS: 
+Wall Clock Time (Milliseconds): 8571.0000 
+User CPU time: 0004 (ms)
+System CPU time: 0004 (ms)
+Times preempted Voulentarily: 4 
+Times preempted Unvoulentarily: 3 
+Major page faults: 0 
+Minor page faults: 414 
+Max residents (kb): 2152 
+
+
+[1], 54696, sleep
+==>sleep 10 &
+[2], 54699, sleep
+==>sleep 15 &
+{1}, 54696, Completed
+BACKGROUND TASK STATS: 
+Wall Clock Time (Milliseconds): 7430.0000 
+User CPU time: 0004 (ms)
+System CPU time: 0004 (ms)
+Times preempted Voulentarily: 4 
+Times preempted Unvoulentarily: 3 
+Major page faults: 0 
+Minor page faults: 414 
+Max residents (kb): 2152 
+
+
+[2], 54700, sleep
+==>sleep 20 &
+[3], 54701, sleep
+==>exit
+Waiting for background processees to finish...
+[1], 54699, Completed
+BACKGROUND TASK STATS: 
+Wall Clock Time (Milliseconds): 10002.0000 
+User CPU time: 0004 (ms)
+System CPU time: 0004 (ms)
+Times preempted Voulentarily: 4 
+Times preempted Unvoulentarily: 3 
+Major page faults: 0 
+Minor page faults: 414 
+Max residents (kb): 2152 
+
+
+[1], 54700, Completed
+BACKGROUND TASK STATS: 
+Wall Clock Time (Milliseconds): 15002.0000 
+User CPU time: 0004 (ms)
+System CPU time: 0004 (ms)
+Times preempted Voulentarily: 4 
+Times preempted Unvoulentarily: 3 
+Major page faults: 0 
+Minor page faults: 414 
+Max residents (kb): 2152 
+
+
+[1], 54701, Completed
+BACKGROUND TASK STATS: 
+Wall Clock Time (Milliseconds): 20002.0000 
+User CPU time: 0004 (ms)
+System CPU time: 0004 (ms)
+Times preempted Voulentarily: 4 
+Times preempted Unvoulentarily: 3 
+Major page faults: 0 
+Minor page faults: 414 
+Max residents (kb): 2152 
+
+
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/Project 1[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/Project 1[00m$ make clean
+[?2004lrm -f doit justBlank
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/Project 1[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/Project 1[00m$ make
+[?2004lg++ -Wall -std=c++11 -o doit doit.cpp
+[01m[Kdoit.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[Kdoit.cpp:85:14:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wwrite-strings-Wwrite-strings]8;;[m[K]
+   85 |     prompt = [01;35m[K"==>"[m[K;
+      |              [01;35m[K^~~~~[m[K
+g++ -Wall -std=c++11 -o justBlank justBlank.cpp
+[01m[KjustBlank.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[KjustBlank.cpp:24:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Karg1[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   24 |     char *[01;35m[Karg1[m[K = argv[2];
+      |           [01;35m[K^~~~[m[K
+[01m[KjustBlank.cpp:25:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Karg2[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   25 |     char *[01;35m[Karg2[m[K = argv[3];
+      |           [01;35m[K^~~~[m[K
+[01m[KjustBlank.cpp:12:5:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kstatus[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   12 | int [01;35m[Kstatus[m[K;
+      |     [01;35m[K^~~~~~[m[K
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/Project 1[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/Project 1[00m$ ./doit
+[?2004l==>ls
+doit	  doitScript  exit	justBlank      makefile  Tryme
+doit.cpp  doit.txt    Fork.cpp	justBlank.cpp  Test.txt  typescript
+Wall Clock Time (ms): 1.0000 
+User CPU time: 0001 (ms)
+System CPU time: 0001 (ms)
+Times preempted Voulentarily: 1 
+Times preempted Unvoulentarily: 0 
+Major page faults: 0 
+Minor page faults: 104 
+Max residents (kb): 2140 
+==>sleep 10 &
+[1], 54778, sleep
+==>sleep 15 &
+[2], 54779, sleep
+==>sleep 20 &
+[3], 54780, sleep
+==>exit
+Waiting for background processees to finish...
+[1], 54778, Completed
+BACKGROUND TASK STATS: 
+Wall Clock Time (Milliseconds): 10001.0000 
+User CPU time: 0001 (ms)
+System CPU time: 0001 (ms)
+Times preempted Voulentarily: 1 
+Times preempted Unvoulentarily: 0 
+Major page faults: 0 
+Minor page faults: 104 
+Max residents (kb): 2140 
+
+
+[1], 54779, Completed
+BACKGROUND TASK STATS: 
+Wall Clock Time (Milliseconds): 15001.0000 
+User CPU time: 0001 (ms)
+System CPU time: 0001 (ms)
+Times preempted Voulentarily: 1 
+Times preempted Unvoulentarily: 0 
+Major page faults: 0 
+Minor page faults: 104 
+Max residents (kb): 2140 
+
+
+[1], 54780, Completed
+BACKGROUND TASK STATS: 
+Wall Clock Time (Milliseconds): 20003.0000 
+User CPU time: 0001 (ms)
+System CPU time: 0001 (ms)
+Times preempted Voulentarily: 1 
+Times preempted Unvoulentarily: 0 
+Major page faults: 0 
+Minor page faults: 104 
+Max residents (kb): 2140 
+
+
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/Project 1[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/Project 1[00m$ make
+[?2004lmake: Nothing to be done for 'all'.
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/Project 1[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/Project 1[00m$ make./doit
+[?2004l==>sleep 5 &
+[1], 54838, sleep
+==>;s
+Improper Command: ;s
+Wall Clock Time (ms): 1.0000 
+User CPU time: 0000 (ms)
+System CPU time: 0000 (ms)
+Times preempted Voulentarily: 1 
+Times preempted Unvoulentarily: 0 
+Major page faults: 0 
+Minor page faults: 98 
+Max residents (kb): 2424 
+==>ls
+doit	  doitScript  exit	justBlank      makefile  Tryme
+doit.cpp  doit.txt    Fork.cpp	justBlank.cpp  Test.txt  typescript
+Wall Clock Time (ms): 1.0000 
+User CPU time: 0001 (ms)
+System CPU time: 0001 (ms)
+Times preempted Voulentarily: 2 
+Times preempted Unvoulentarily: 1 
+Major page faults: 0 
+Minor page faults: 203 
+Max residents (kb): 2424 
+==>ls
+doit	  doitScript  exit	justBlank      makefile  Tryme
+doit.cpp  doit.txt    Fork.cpp	justBlank.cpp  Test.txt  typescript
+Wall Clock Time (ms): 2.0000 
+User CPU time: 0002 (ms)
+System CPU time: 0002 (ms)
+Times preempted Voulentarily: 3 
+Times preempted Unvoulentarily: 1 
+Major page faults: 0 
+Minor page faults: 307 
+Max residents (kb): 2424 
+==>ls
+{1}, 54838, Completed
+BACKGROUND TASK STATS: 
+Wall Clock Time (Milliseconds): 5767.0000 
+User CPU time: 0002 (ms)
+System CPU time: 0002 (ms)
+Times preempted Voulentarily: 3 
+Times preempted Unvoulentarily: 1 
+Major page faults: 0 
+Minor page faults: 307 
+Max residents (kb): 2424 
+
+
+doit	  doitScript  exit	justBlank      makefile  Tryme
+doit.cpp  doit.txt    Fork.cpp	justBlank.cpp  Test.txt  typescript
+Wall Clock Time (ms): 1.0000 
+User CPU time: 0004 (ms)
+System CPU time: 0004 (ms)
+Times preempted Voulentarily: 6 
+Times preempted Unvoulentarily: 1 
+Major page faults: 0 
+Minor page faults: 495 
+Max residents (kb): 2424 
+==>sleep 2 &
+[1], 54843, sleep
+==>ls
+doit	  doitScript  exit	justBlank      makefile  Tryme
+doit.cpp  doit.txt    Fork.cpp	justBlank.cpp  Test.txt  typescript
+Wall Clock Time (ms): 1.0000 
+User CPU time: 0005 (ms)
+System CPU time: 0005 (ms)
+Times preempted Voulentarily: 7 
+Times preempted Unvoulentarily: 1 
+Major page faults: 0 
+Minor page faults: 600 
+Max residents (kb): 2424 
+==>ls
+{1}, 54843, Completed
+BACKGROUND TASK STATS: 
+Wall Clock Time (Milliseconds): 2789.0000 
+User CPU time: 0005 (ms)
+System CPU time: 0005 (ms)
+Times preempted Voulentarily: 7 
+Times preempted Unvoulentarily: 1 
+Major page faults: 0 
+Minor page faults: 600 
+Max residents (kb): 2424 
+
+
+doit	  doitScript  exit	justBlank      makefile  Tryme
+doit.cpp  doit.txt    Fork.cpp	justBlank.cpp  Test.txt  typescript
+Wall Clock Time (ms): 1.0000 
+User CPU time: 0007 (ms)
+System CPU time: 0007 (ms)
+Times preempted Voulentarily: 10 
+Times preempted Unvoulentarily: 1 
+Major page faults: 0 
+Minor page faults: 788 
+Max residents (kb): 2424 
+==>3
+Improper Command: 3
+Wall Clock Time (ms): 1.0000 
+User CPU time: 0007 (ms)
+System CPU time: 0007 (ms)
+Times preempted Voulentarily: 11 
+Times preempted Unvoulentarily: 1 
+Major page faults: 0 
+Minor page faults: 886 
+Max residents (kb): 2424 
+==>ls
+doit	  doitScript  exit	justBlank      makefile  Tryme
+doit.cpp  doit.txt    Fork.cpp	justBlank.cpp  Test.txt  typescript
+Wall Clock Time (ms): 2.0000 
+User CPU time: 0009 (ms)
+System CPU time: 0009 (ms)
+Times preempted Voulentarily: 13 
+Times preempted Unvoulentarily: 2 
+Major page faults: 1 
+Minor page faults: 991 
+Max residents (kb): 2424 
+==>sleep 5 &
+[1], 55687, sleep
+==>sleep 10 % $
+sleep: invalid time interval ‘$’
+Try 'sleep --help' for more information.
+Wall Clock Time (ms): 1.0000 
+User CPU time: 0009 (ms)
+System CPU time: 0009 (ms)
+Times preempted Voulentarily: 14 
+Times preempted Unvoulentarily: 3 
+Major page faults: 1 
+Minor page faults: 1080 
+Max residents (kb): 2424 
+==>sleep 15 &
+{1}, 55687, Completed
+BACKGROUND TASK STATS: 
+Wall Clock Time (Milliseconds): 6636.0000 
+User CPU time: 0009 (ms)
+System CPU time: 0009 (ms)
+Times preempted Voulentarily: 14 
+Times preempted Unvoulentarily: 3 
+Major page faults: 1 
+Minor page faults: 1080 
+Max residents (kb): 2424 
+
+
+[1], 55689, sleep
+==>exit
+Waiting for background processees to finish...
+[1], 55689, Completed
+BACKGROUND TASK STATS: 
+Wall Clock Time (Milliseconds): 158250.0000 
+User CPU time: 0009 (ms)
+System CPU time: 0009 (ms)
+Times preempted Voulentarily: 14 
+Times preempted Unvoulentarily: 3 
+Major page faults: 1 
+Minor page faults: 1080 
+Max residents (kb): 2424 
+
+
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/Project 1[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/Project 1[00m$ clear
+[?2004l[H[2J[3J[?2004h]0;student@arm-u2204-try1: ~/Desktop/Project 1[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/Project 1[00m$ script script
+[?2004lScript started, output log file is 'script'.
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/Project_1[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/Project_1[00m$ ./doit 
+[?2004l==>date
+Tue Sep  5 02:38:15 PM UTC 2023
+Wall Clock Time (ms): 1.0000 
+User CPU time: 0000 (ms)
+System CPU time: 0000 (ms)
+Times preempted Voulentarily: 1 
+Times preempted Unvoulentarily: 1 
+Major page faults: 0 
+Minor page faults: 85 
+Max residents (kb): 1788 
+==>ls
+doit	  doitScript  exit	justBlank      makefile  Test.txt  typescript
+doit.cpp  doit.txt    Fork.cpp	justBlank.cpp  script	 Tryme
+Wall Clock Time (ms): 1.0000 
+User CPU time: 0001 (ms)
+System CPU time: 0001 (ms)
+Times preempted Voulentarily: 2 
+Times preempted Unvoulentarily: 1 
+Major page faults: 0 
+Minor page faults: 189 
+Max residents (kb): 2152 
+==>cd ..
+Current working directory: /home/student/Desktop
+==>cd Project_1
+Current working directory: /home/student/Desktop/Project_1
+==>set prompt = >>>>>
+prompt changed
+>>>>>sleep 5 &
+[1], 55830, sleep
+>>>>>sleep 10 &
+[2], 55831, sleep
+>>>>>sleep 15 &
+{1}, 55830, Completed
+BACKGROUND TASK STATS: 
+Wall Clock Time (Milliseconds): 5702.0000 
+User CPU time: 0001 (ms)
+System CPU time: 0001 (ms)
+Times preempted Voulentarily: 2 
+Times preempted Unvoulentarily: 1 
+Major page faults: 0 
+Minor page faults: 189 
+Max residents (kb): 2152 
+
+
+[2], 55832, sleep
+>>>>>sleep 20 &
+[3], 55833, sleep
+>>>>>exit
+Waiting for background processees to finish...
+[1], 55831, Completed
+BACKGROUND TASK STATS: 
+Wall Clock Time (Milliseconds): 10002.0000 
+User CPU time: 0001 (ms)
+System CPU time: 0001 (ms)
+Times preempted Voulentarily: 2 
+Times preempted Unvoulentarily: 1 
+Major page faults: 0 
+Minor page faults: 189 
+Max residents (kb): 2152 
+
+
+[1], 55832, Completed
+BACKGROUND TASK STATS: 
+Wall Clock Time (Milliseconds): 15002.0000 
+User CPU time: 0001 (ms)
+System CPU time: 0001 (ms)
+Times preempted Voulentarily: 2 
+Times preempted Unvoulentarily: 1 
+Major page faults: 0 
+Minor page faults: 189 
+Max residents (kb): 2152 
+
+
+[1], 55833, Completed
+BACKGROUND TASK STATS: 
+Wall Clock Time (Milliseconds): 20003.0000 
+User CPU time: 0001 (ms)
+System CPU time: 0001 (ms)
+Times preempted Voulentarily: 2 
+Times preempted Unvoulentarily: 1 
+Major page faults: 0 
+Minor page faults: 189 
+Max residents (kb): 2152 
+
+
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/Project_1[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/Project_1[00m$ exit
+[?2004lexit
+Script done.
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/Project 1[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/Project 1[00m$ script script2
+[?2004lScript started, output log file is 'script2'.
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/Project_1[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/Project_1[00m$ ./doit
+[?2004l==>date
+Tue Sep  5 02:39:49 PM UTC 2023
+Wall Clock Time (ms): 1.0000 
+User CPU time: 0000 (ms)
+System CPU time: 0000 (ms)
+Times preempted Voulentarily: 1 
+Times preempted Unvoulentarily: 1 
+Major page faults: 0 
+Minor page faults: 85 
+Max residents (kb): 1816 
+==>cd ..
+Current working directory: /home/student/Desktop
+==>ls
+ doit.cpp      'Project 1'   week1-proc.pdf
+ fork23-1.pdf   Project_1    xfce4-terminal-emulator.desktop
+Wall Clock Time (ms): 1.0000 
+User CPU time: 0000 (ms)
+System CPU time: 0000 (ms)
+Times preempted Voulentarily: 2 
+Times preempted Unvoulentarily: 2 
+Major page faults: 0 
+Minor page faults: 186 
+Max residents (kb): 2084 
+==>cd Project_1
+Current working directory: /home/student/Desktop/Project_1
+==>set pr rompt = >>>>>
+prompt changed
+>>>>>sdjkg
+Improper Command: sdjkg
+Wall Clock Time (ms): 1.0000 
+User CPU time: 0001 (ms)
+System CPU time: 0001 (ms)
+Times preempted Voulentarily: 3 
+Times preempted Unvoulentarily: 2 
+Major page faults: 0 
+Minor page faults: 283 
+Max residents (kb): 2424 
+>>>>>sleep 5 &
+[1], 55849, sleep
+>>>>>sleep 10 &
+[2], 55850, sleep
+>>>>>sleep 15 &
+{1}, 55849, Completed
+BACKGROUND TASK STATS: 
+Wall Clock Time (Milliseconds): 5972.0000 
+User CPU time: 0001 (ms)
+System CPU time: 0001 (ms)
+Times preempted Voulentarily: 3 
+Times preempted Unvoulentarily: 2 
+Major page faults: 0 
+Minor page faults: 283 
+Max residents (kb): 2424 
+
+
+[2], 55851, sleep
+>>>>>sleep 20 &
+[3], 55852, sleep
+>>>>>exit
+Waiting for background processees to finish...
+[1], 55850, Completed
+BACKGROUND TASK STATS: 
+Wall Clock Time (Milliseconds): 10002.0000 
+User CPU time: 0001 (ms)
+System CPU time: 0001 (ms)
+Times preempted Voulentarily: 3 
+Times preempted Unvoulentarily: 2 
+Major page faults: 0 
+Minor page faults: 283 
+Max residents (kb): 2424 
+
+
+[1], 55851, Completed
+BACKGROUND TASK STATS: 
+Wall Clock Time (Milliseconds): 15005.0000 
+User CPU time: 0001 (ms)
+System CPU time: 0001 (ms)
+Times preempted Voulentarily: 3 
+Times preempted Unvoulentarily: 2 
+Major page faults: 0 
+Minor page faults: 283 
+Max residents (kb): 2424 
+
+
+[1], 55852, Completed
+BACKGROUND TASK STATS: 
+Wall Clock Time (Milliseconds): 20002.0000 
+User CPU time: 0001 (ms)
+System CPU time: 0001 (ms)
+Times preempted Voulentarily: 3 
+Times preempted Unvoulentarily: 2 
+Major page faults: 0 
+Minor page faults: 283 
+Max residents (kb): 2424 
+
+
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/Project_1[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/Project_1[00m$ exxit
+[?2004lexxit: command not found
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/Project_1[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/Project_1[00m$ exit
+[?2004lexit
+Script done.
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/Project 1[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/Project 1[00m$ x[Kcd ..
+[?2004l[?2004h]0;student@arm-u2204-try1: ~/Desktop[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop[00m$ cd Proj1
+[?2004l[?2004h]0;student@arm-u2204-try1: ~/Desktop/Proj1[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/Proj1[00m$ make
+[?2004lmake: *** No rule to make target 'doit.cpp', needed by 'doit'.  Stop.
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/Proj1[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/Proj1[00m$ make
+[?2004lg++ -Wall -std=c++11 -o doit doit.cpp
+[01m[Kdoit.cpp:[m
