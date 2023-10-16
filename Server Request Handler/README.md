@@ -2,7 +2,7 @@
 
 **Description:**
 
-The Server Request Handler is a program designed to process file requests on a server using different architectural approaches. File names are piped into the program, where they are treated as individual requests. These requests are then processed by either a single process or multiple threads, with statistics being counted. The program returns comprehensive file statistics upon completion utilizing mutual exclusion in the multi-threaded architecture. It supports both a serial architecture (single process, no threads) and a multi-threaded architecture (multiple threads within a single process).
+The Server Request Handler is a program designed to process file requests on a server using different architectural approaches. File names can be inputed by the user or piped into the program, where they are treated as individual requests. These requests are then processed by either a single-threaded or multi-threaded, with statistics being counted. The program returns comprehensive file statistics. It supports both a serial architecture (single process, no threads) and a multi-threaded architecture (multiple threads within a single process) utilizing mutual exclusion, or mutex.
 
 **Features:**
 
@@ -10,6 +10,28 @@ The Server Request Handler is a program designed to process file requests on a s
 - Supports two architectures: serial and multi-threaded.
 - Utilizes the Linux system call `stat()` to retrieve file details.
 - Identifies text files by examining their content.
+
+## Example Run:
+### $ ls -1d /dev/* | ./SRH thread 4
+Bad Files: 0
+Directories: 17
+Regular Files: 1
+Special Files: 183
+Regular File Bytes: 79671296
+Text Files: 0
+Text File Bytes: 0
+
+$ 
+
+## Compilation:
+
+To compile the program with the multi-threaded architecture, use the **makefile** or use the following command:
+**make clean**
+**make**
+
+***or***
+
+**$ g++ -o proj4 proj4.cpp -lpthread**
 
 ## Usage:
 
@@ -56,11 +78,6 @@ Piper in the <strong>ls -1d*</strong> command into the SRH, by:
 The program will provide statistics for each file, including the number of bad files, directories, regular files, special files, total bytes used, and more.
 </p>
 
-## Compilation:
-
-To compile the program with the multi-threaded architecture, use the **makefile** or use the following command:
-
-###### $ g++ -o proj4 proj4.cpp -lpthread
 
 Ensure that the pthread library is available.
 
