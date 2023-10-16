@@ -20,12 +20,14 @@ In the serial architecture version, the program reads file names from standard i
 
 
 <h6>$ ./SRH</h6>
-
+<p>
 Enter file names one per line. Press ***Ctrl + D*** to signal the end of input.
+</p>
 
 **or**
-
+<p>
 Piper in the ***ls*** command into the SRH, by:
+</p>
 
 <h6>$ ls -1d* | ./SRH</h6>
 
@@ -54,7 +56,7 @@ Piper in the ***ls*** command into the SRH, by:
 <p>
 Alternatively, you can list the file names in a text file and redirect it as stdin to the program for automated testing:
 </p>
-** $ ./proj4 < input_file.txt **
+<h6>$ ./proj4 < input_file.txt </h6> 
                
 ### Output:
 <p>
@@ -64,7 +66,8 @@ The program will provide statistics for each file, including the number of bad f
 
 To compile the program with the multi-threaded architecture, use the **makefile** or use the following command:
 
-$ g++ -o proj4 proj4.cpp -lpthread
+<h6> $ g++ -o proj4 proj4.cpp -lpthread </h6>
+<p>
 Ensure that the pthread library is available.
-
+</p>
 
