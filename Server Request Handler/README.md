@@ -14,13 +14,13 @@ The Server Request Handler is a program designed to process file requests on a s
 ## Example Run:
 ##### $ ls -1d /dev/* | ./SRH thread 4
 <p>
-Bad Files: 0
-Directories: 17
-Regular Files: 1
-Special Files: 183
-Regular File Bytes: 79671296
-Text Files: 0
-Text File Bytes: 0
+Bad Files: 0<br>
+Directories: 17<br>
+Regular Files: 1<br>
+Special Files: 183<br>
+Regular File Bytes: 79671296<br>
+Text Files: 0<br>
+Text File Bytes: 0<br>
 
 $ 
 </p>
