@@ -12,7 +12,8 @@ The Server Request Handler is a program designed to process file requests on a s
 - Identifies text files by examining their content.
 
 ## Example Run:
-### $ ls -1d /dev/* | ./SRH thread 4
+##### $ ls -1d /dev/* | ./SRH thread 4
+<p>
 Bad Files: 0
 Directories: 17
 Regular Files: 1
@@ -22,7 +23,7 @@ Text Files: 0
 Text File Bytes: 0
 
 $ 
-
+</p>
 ## Compilation:
 
 To compile the program with the multi-threaded architecture, use the **makefile** or use the following command:
