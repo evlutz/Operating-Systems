@@ -35,26 +35,31 @@ The multi-threaded architecture allows for concurrent handling of file requests.
 
 
 ###### $ ./SRH thread ***[max_threads]***
-Example, to run with at most 10 threads:
+<p>
+Example, to run with at most 10 threads:</p>
 
 **$ ./SRH thread 10**
+<p>
 Enter file names as in serial mode. Press Ctrl + D to signal the end of input.
+</p>
 
 **or**
-
+<p>
 Piper in the ***ls*** command into the SRH, by:
+</p>
 
 <h6>$ ls -1d* | ./SRH thread 10</h6>
 
 ## Testing with Input Files:
-
+<p>
 Alternatively, you can list the file names in a text file and redirect it as stdin to the program for automated testing:
-
-$ ./proj4 < input_file.txt
-Output:
-
+</p>
+** $ ./proj4 < input_file.txt **
+               
+### Output:
+<p>
 The program will provide statistics for each file, including the number of bad files, directories, regular files, special files, total bytes used, and more.
-
+</p>
 ## Compilation:
 
 To compile the program with the multi-threaded architecture, use the **makefile** or use the following command:
