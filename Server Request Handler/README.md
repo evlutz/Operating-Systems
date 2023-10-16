@@ -14,20 +14,20 @@ The Server Request Handler is a program designed to process file requests on a s
 
 <h2>Usage:</h2>
 
-# Serial Architecture:
+## Serial Architecture:
 <p>
 In the serial architecture version, the program reads file names from standard input, processes them sequentially, and provides the required file statistics. To run the program in serial mode: </p>
 
 
 <h6>$ ./SRH</h6>
-<p>
+
 Enter file names one per line. Press ***Ctrl + D*** to signal the end of input.
-</p>
+
 
 **or**
-<p>
+
 Piper in the ***ls*** command into the SRH, by:
-</p>
+
 
 <h6>$ ls -1d* | ./SRH</h6>
 
