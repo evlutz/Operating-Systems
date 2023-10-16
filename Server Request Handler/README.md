@@ -25,9 +25,9 @@ Text File Bytes: 0<br>
 $ </p>
 ## Compilation:
 
-To compile the program with the multi-threaded architecture, use the **makefile** or use the following command:
-**make clean**
-**make**
+To compile the program with the multi-threaded architecture, use the **makefile** or use the following command:<br>
+**make clean**<br>
+**make**<br>
 
 ***or***
 
