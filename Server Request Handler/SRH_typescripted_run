@@ -1,0 +1,141 @@
+Script started on 2023-10-10 07:20:58+00:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="80" LINES="24"]
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/project4[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/project4[00m$ make clean
+[?2004lrm -f proj4
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/project4[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/project4[00m$ make
+[?2004lg++ proj4.cpp -o proj4 -w -lpthread
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/project4[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/project4[00m$ ./SRH[K[K[K[K[K[K[Kls -1d * | ./SRH
+[?2004lBad Files: 0
+Directories: 0
+Regular Files: 6
+Special Files: 0
+Regular File Bytes: 105248
+Text Files: 4
+Text File Bytes: 6063
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/project4[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/project4[00m$ ls -1d * | ./SRH[1@/[1@d[1@e[1@v[1@/[C[C[C[C[C[C[C[C[C[C[C
+[?2004lCould not open a file: Permission denied
+Bad Files: 0
+Directories: 17
+Regular Files: 1
+Special Files: 183
+Regular File Bytes: 79671296
+Text Files: 0
+Text File Bytes: 0
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/project4[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/project4[00m$ ls -1d /dev/* | ./SRH thr
+[?2004lInvalid argument. Usage: ./SRH [thread] [# of threads]
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/project4[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/project4[00m$ ls -1d /dev/* | ./SRH thread
+[?2004lCould not open a file: Permission denied
+Bad Files: 0
+Directories: 17
+Regular Files: 1
+Special Files: 183
+Regular File Bytes: 79671296
+Text Files: 0
+Text File Bytes: 0
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/project4[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/project4[00m$ ls -1d /dev/* | ./SRH thread[1P[1P[1P[1P[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lBad Files: 0
+Directories: 0
+Regular Files: 6
+Special Files: 0
+Regular File Bytes: 105248
+Text Files: 4
+Text File Bytes: 6063
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/project4[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/project4[00m$ ls -1d * | ./SRH thread 10
+[?2004lBad Files: 0
+Directories: 0
+Regular Files: 6
+Special Files: 0
+Regular File Bytes: 105248
+Text Files: 4
+Text File Bytes: 6063
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/project4[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/project4[00m$ ls -1d * | ./SRH thread 10[K6
+[?2004lToo many threads requested. Max: 15 Success
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/project4[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/project4[00m$ ls -1d * | ./SRH thread 16[K4[1@/[1@d[1@e[1@v[1@/[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lCould not open a file: Permission denied
+Bad Files: 0
+Directories: 17
+Regular Files: 1
+Special Files: 183
+Regular File Bytes: 79671296
+Text Files: 0
+Text File Bytes: 0
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/project4[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/project4[00m$ script
+[?2004lScript started, output log file is 'typescript'.
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/project4[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/project4[00m$ script
+[?2004lScript started, output log file is 'typescript'.
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/project4[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/project4[00m$ make clean
+[?2004lrm -f proj4
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/project4[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/project4[00m$ make
+[?2004lg++ proj4.cpp -o proj4 -w -lpthread
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/project4[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/project4[00m$ make cleanls -1d * | ./SRH thread 87654make[Kls -1d * | ./SRH thread 48makemake[Kls -1d * | ./SRH thread 8make[K76543210[1P9876548make[Kls -1d * | ./SRH thread 8make[Kls -1d * | ./SRH thread 845[K[K[K[K[K[K[K[K[K
+[?2004lBad Files: 0
+Directories: 0
+Regular Files: 7
+Special Files: 0
+Regular File Bytes: 109344
+Text Files: 4
+Text File Bytes: 6063
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/project4[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/project4[00m$ ls -1d * | ./SRH[1@/[1@d[1@e[1@v[1@/
+[?2004lCould not open a file: Permission denied
+Bad Files: 0
+Directories: 17
+Regular Files: 1
+Special Files: 183
+Regular File Bytes: 79671296
+Text Files: 0
+Text File Bytes: 0
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/project4[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/project4[00m$ ls -1d /dev/* | ./SRH h[Kthread[C[C
+[?2004lCould not open a file: Permission denied
+Bad Files: 0
+Directories: 17
+Regular Files: 1
+Special Files: 183
+Regular File Bytes: 79671296
+Text Files: 0
+Text File Bytes: 0
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/project4[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/project4[00m$ ls -1d /dev/* | ./SRH thread[1P[1P[1P[1P[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lBad Files: 0
+Directories: 0
+Regular Files: 7
+Special Files: 0
+Regular File Bytes: 109344
+Text Files: 4
+Text File Bytes: 6063
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/project4[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/project4[00m$ ls -1d * | ./SRH thread[K[K
+[?2004lInvalid argument. Usage: ./SRH [thread] [# of threads]
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/project4[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/project4[00m$ ls -1d * | ./SRH thread 15
+[?2004lBad Files: 0
+Directories: 0
+Regular Files: 7
+Special Files: 0
+Regular File Bytes: 109344
+Text Files: 4
+Text File Bytes: 6063
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/project4[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/project4[00m$ ls -1d * | ./SRH thread 15[K6
+[?2004lToo many threads requested. Max: 15 Success
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/project4[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/project4[00m$ ls -1d * | ./SRH thread 16[C[K[K10[C[1@/[1@d[1@e[1@v[1@/[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lCould not open a file: Permission denied
+Bad Files: 0
+Directories: 17
+Regular Files: 1
+Special Files: 183
+Regular File Bytes: 79671296
+Text Files: 0
+Text File Bytes: 0
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/project4[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/project4[00m$ script
+[?2004lScript started, output log file is 'typescript'.
+[?2004h]0;student@arm-u2204-try1: ~/Desktop/project4[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop/project4[00m$ zip [K[K[K[Kcd ..
+[?2004l[?2004h]0;student@arm-u2204-try1: ~/Desktop[01;32mstudent@arm-u2204-try1[00m:[01;34m~/Desktop[00m$ zip
+[?2004lCopyright (c) 1990-2008 Info-ZIP - Type 'zip "-L"' for software license.
+Zip 3.0 (July 5th 2008). Usage:
+zip [-options] [-b path] [-t mmddyyyy] [-n suffixes] [zipfile list] [-xi list]
+  The default action is to add or replace zipfile entries from list, which
+  can include the special name - to compress standard input.
+  If zipfile and list are omitted, zip compresses stdin to stdout.
+  -f   freshen: only changed files  -u   update: only changed or new files
+  -d   delete entries in zipfile    -m   move into zipfile (delete OS files)
+  -r   recurse into directories     -j   junk (don't record) directory names
+  -0   store only                   -l   convert LF to CR LF (-ll CR LF to LF)
+  -1   compress faster              -9   compress better
+  -q   quiet operation              -v   verbose operation/print version info
+  -c   add one-line comments        -z   add zipfile comment
+  -
