@@ -22,8 +22,7 @@ Regular File Bytes: 79671296<br>
 Text Files: 0<br>
 Text File Bytes: 0<br>
 
-$ 
-</p>
+$ </p>
 ## Compilation:
 
 To compile the program with the multi-threaded architecture, use the **makefile** or use the following command:
