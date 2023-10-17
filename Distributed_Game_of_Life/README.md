@@ -42,7 +42,7 @@ To compile the `game_of_life` with header files and abstracts, use the **makefil
     - Option to print each generation (default is *False*)
     - Option for keyboard input before proceeding (default is *False*)
 
-#### Game Boards
+**Game Boards**
 
 Game boards can be created by ant user, it consists of a grid of 1's and 0's which cannot be more than 40 rows or columns.
 1's represent alive cells and 0's represent deadcells.
@@ -50,11 +50,16 @@ Game boards can be created by ant user, it consists of a grid of 1's and 0's whi
 To create a gameboard simply create a text file and create or edit the pre installed grids under the `Starting_Boards` directory
            
 ## Output:
-<p>
-The program will provide statistics for each file, including the number of bad files, directories, regular files, special files, total bytes used, and more.
-</p>
+
+Depending on the User-set output congigurations `Print boards` & `Wait for key` determines what the output of the program will look like
+
+`Wait for key` - Wait for user input before continuing to the next gerneration *Default=False*
+`Print boards` - Print generations *Default=False*
+
+Regardless of these configurations if the program ran correctly `Number of set generations reached`, or `Game Stopped: Repetitive Generations` depending if the generations become redundant before they reach the pre-set number of generations is reached.
 
 
-Ensure that the pthread library is available.
-
+### Notes
+- Ensure that the pthread library is available.
+- As grid nears 40x40 malloc errors become more likely
 
