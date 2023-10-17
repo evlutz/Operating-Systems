@@ -6,20 +6,17 @@ This distributed version of John Conway's Game of Life, utilizing message passin
 
 **Features:**
 
-Distributed Computation allows multiple threads to parallelize the evaluation of cells for each generation.
+- Distributed Computation allows multiple threads to parallelize the evaluation of cells for each generation.
 
-Implements John Conway’s Game of Life *[learn more](https://www.nytimes.com/2020/12/28/science/math-conway-game-of-life.html).*
+- Implements John Conway’s Game of Life *[learn more](https://www.nytimes.com/2020/12/28/science/math-conway-game-of-life.html).*
 
-Message passing implements synchronization of threads between each generation
+- Message passing implements synchronization of threads between each generation
 
-Semaphores protect shared data while sending messages between threads.
+- Semaphores protect shared data while sending messages between threads.
 
-Configurable command line arguments 3-5 
+- File Input for initial generation
 
 
-
-**File Input for Initial Configuration**
-- Reads the initial configuration of organisms (Generation 0) from an ASCII text file.
 
 **Configurable via Command Line Arguments**
 - Accepts 3-5 command line arguments for customization:
@@ -30,17 +27,9 @@ Configurable command line arguments 3-5
     - Option for keyboard input before proceeding (default is *False*)
 
 ## Example Run:
-##### $ ls -1d /dev/* | ./SRH thread 4
-<p>
-Bad Files: 0<br>
-Directories: 17<br>
-Regular Files: 1<br>
-Special Files: 183<br>
-Regular File Bytes: 79671296<br>
-Text Files: 0<br>
-Text File Bytes: 0<br>
+##### $ ./game_of_life 10 glider_gun.txt 100 y y
+![Alt Text](LifeRun.gif)
 
-$ </p>
 ## Compilation:
 
 To compile the program with the multi-threaded architecture, use the **makefile** or use the following command:<br>
