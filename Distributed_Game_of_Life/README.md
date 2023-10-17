@@ -23,7 +23,7 @@ This distributed version of John Conway's Game of Life, utilizing message passin
 
 ## Compilation:
 
-To compile the 'game_of_life' with header files and abstracts, use the **makefile** or use the following command:<br>
+To compile the `game_of_life` with header files and abstracts, use the **makefile** or use the following command:<br>
 - **make clean**<br>
 - **make**<br>
 
@@ -47,7 +47,7 @@ To compile the 'game_of_life' with header files and abstracts, use the **makefil
 Game boards can be created by ant user, it consists of a grid of 1's and 0's which cannot be more than 40 rows or columns.
 1's represent alive cells and 0's represent deadcells.
 
-To create a gameboard simply create a text file and create or edit the pre installed grids under the 'Starting_Boards' directory
+To create a gameboard simply create a text file and create or edit the pre installed grids under the `Starting_Boards` directory
            
 ## Output:
 <p>
