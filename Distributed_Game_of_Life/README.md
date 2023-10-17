@@ -29,10 +29,10 @@ To compile the `game_of_life` with header files and abstracts, use the **makefil
 
 ***or***
 
-- **$ g++ -o -pthread life.cpp life.h AbstractLife.h -o game_of_life**
+- **`$ g++ -o -pthread life.cpp life.h AbstractLife.h -o game_of_life`**
 
 ## Usage:
-###### $ ./game_of_life [*# Threads*] [*File name*] [*# of generations*]   *Optional:*{Print generations?} *Optional:*{Wait for input}
+###### `$ ./game_of_life [*# Threads*] [*File name*] [*# of generations*]   *Optional:*{Print generations?} *Optional:*{Wait for input}`
 
 **Configurable Command Line Arguments**
 - Accepts 3-5 command line arguments for customization:
@@ -53,10 +53,20 @@ To create a gameboard simply create a text file and create or edit the pre insta
 
 Depending on the User-set output congigurations `Print boards` & `Wait for key` determines what the output of the program will look like
 
-`Wait for key` - Wait for user input before continuing to the next gerneration *Default=False*
+`Wait for key` - Wait for user input before continuing to the next gerneration *Default=False* <br>
 `Print boards` - Print generations *Default=False*
 
-Regardless of these configurations if the program ran correctly `Number of set generations reached`, or `Game Stopped: Repetitive Generations` depending if the generations become redundant before they reach the pre-set number of generations is reached.
+Regardless of these configurations if the program ran correctly `Number of set generations reached`, <br> or <br> `Game Stopped: Repetitive Generations` depending if the generations become redundant before they reach the pre-set number of generations is reached.
+
+## Message Types
+
+Message types used to synchronize threads and decide game state:
+
+`RANGE`: Sent from main thread to worker threads to assign a range of rows to compute the new generation for.
+`GO`: Sent from main thread to worker threads to start computing the new generation.
+`GENDONE`: Sent from worker threads to main thread to indicate that the new generation has been computed.
+`ALLDONE`: Sent from worker threads to main, indicates pre-set number of generations have been reached
+`STOP`: Sent from main thread to worker threads to terminate the game, used if a redundant generation is reached.
 
 
 ### Notes
