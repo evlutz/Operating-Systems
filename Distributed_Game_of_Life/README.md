@@ -27,20 +27,21 @@ This distributed version of John Conway's Game of Life, utilizing message passin
     - Option for keyboard input before proceeding (default is *False*)
 
 ## Example Run:
-##### $ ./game_of_life 10 glider_gun.txt 100 y y
+##### $ ./game_of_life 10 glider_gun.txt 120 y y
 ![Alt Text](LifeRun.gif)
 
 ## Compilation:
 
-To compile the program with the multi-threaded architecture, use the **makefile** or use the following command:<br>
-**make clean**<br>
-**make**<br>
+To compile the 'game_of_life' with header files and abstracts, use the **makefile** or use the following command:<br>
+- **make clean**<br>
+- **make**<br>
 
 ***or***
 
-**$ g++ -o proj4 proj4.cpp -lpthread**
+- **$ g++ -o -pthread life.cpp -o game_of_life**
 
 ## Usage:
+###### $ ./game_of_life [*# Threads*] [*File name*] [*# of generations*]   *Optional:*{Print generations?} *Optional:*{Wait for input}
 
 ### Serial Architecture:
 
