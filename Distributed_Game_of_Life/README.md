@@ -38,48 +38,25 @@ To compile the 'game_of_life' with header files and abstracts, use the **makefil
 
 ***or***
 
-- **$ g++ -o -pthread life.cpp -o game_of_life**
+- **$ g++ -o -pthread life.cpp life.h AbstractLife.h -o game_of_life**
 
 ## Usage:
 ###### $ ./game_of_life [*# Threads*] [*File name*] [*# of generations*]   *Optional:*{Print generations?} *Optional:*{Wait for input}
 
-### Serial Architecture:
+**Configurable Command Line Arguments**
+- Accepts 3-5 command line arguments for customization:
+    - Number of threads
+    - File containing Generation 0
+    - Number of generations to play
+    - Option to print each generation (default is *False*)
+    - Option for keyboard input before proceeding (default is *False*)
 
-In the serial architecture version, the program reads file names from standard input, processes them sequentially, and provides the required file statistics. To run the program in serial mode:
+#### Game Boards
 
+    Game boards can be created by ant user, it consists of a grid of 1's and 0's which cannot be more than 40 rows or columns.
+    1's represent alive cells and 0's represent deadcells.
 
-<h6>$ ./SRH</h6>
-
-Enter file names one per line. Press ***Ctrl + D*** to signal the end of input.
-
-
-**or**
-
-Piper in the ***ls*** command into the SRH, by:
-
-
-<h6>$ ls -1d* | ./SRH</h6>
-
-### Multi-Threaded Architecture:
-
-The multi-threaded architecture allows for concurrent handling of file requests. To use this mode, include the argument thread followed by the maximum number of threads to execute at a time.
-
-
-###### $ ./SRH thread ***[max_threads]***
-<p>
-Example, to run with at most 10 threads:</p>
-
-**$ ./SRH thread 10**
-<p>
-Enter file names as in serial mode. Press Ctrl + D to signal the end of input.
-</p>
-
-**or**
-<p>
-Piper in the <strong>ls -1d*</strong> command into the SRH, by:
-</p>
-
-<h6>$ ls -1d* | ./SRH thread 10</h6>
+    To create a gameboard simply create a text file and create or edit the pre installed grids under the 'Starting_Boards' directory
            
 ## Output:
 <p>
