@@ -6,29 +6,22 @@ This distributed version of John Conway's Game of Life, utilizing message passin
 
 **Features:**
 
-**Distributed Computation**
-- Utilizes multiple threads to parallelize the evaluation of cells for each generation.
-- Enhances performance, particularly on multi-processor systems.
+**Distributed Computation** Utilizes multiple threads to parallelize the evaluation of cells for each generation.
 
-**Synchronization**
-- Employs semaphores and message passing for effective coordination between threads.
-- Ensures orderly execution of generations and reporting of results.
+**Synchronization** - Employs semaphores and message passing for coordination between threads and generations.
 
-**John Conway’s Game of Life**
-- Implements the rules defined by John Conway for deriving generations.
-- Supports Death, Survival, and Birth scenarios based on the number of occupied neighbors.
+**John Conway’s Game of Life** - Implement John Conway's Game of Life ***[learn more](https://www.nytimes.com/2020/12/28/science/math-conway-game-of-life.html).***
 
 **File Input for Initial Configuration**
 - Reads the initial configuration of organisms (Generation 0) from an ASCII text file.
-- Parses the file to initialize the grid.
 
 **Configurable via Command Line Arguments**
 - Accepts 3-5 command line arguments for customization:
-- - Number of threads
-- - File containing Generation 0
-- - Number of generations to play
-- - Option to print each generation (default is *False*)
-- - Option for keyboard input before proceeding (default is *False*)
+    - Number of threads
+    - File containing Generation 0
+    - Number of generations to play
+    - Option to print each generation (default is *False*)
+    - Option for keyboard input before proceeding (default is *False*)
 
 ## Example Run:
 ##### $ ls -1d /dev/* | ./SRH thread 4
