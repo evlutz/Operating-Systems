@@ -6,11 +6,17 @@ This distributed version of John Conway's Game of Life, utilizing message passin
 
 **Features:**
 
-**Distributed Computation** Utilizes multiple threads to parallelize the evaluation of cells for each generation.
+Distributed Computation allows multiple threads to parallelize the evaluation of cells for each generation.
 
-**Synchronization** - Employs semaphores and message passing for coordination between threads and generations.
+Implements John Conway’s Game of Life *[learn more](https://www.nytimes.com/2020/12/28/science/math-conway-game-of-life.html).*
 
-**John Conway’s Game of Life** - Implement John Conway's Game of Life ***[learn more](https://www.nytimes.com/2020/12/28/science/math-conway-game-of-life.html).***
+Message passing implements synchronization of threads between each generation
+
+Semaphores protect shared data while sending messages between threads.
+
+Configurable command line arguments 3-5 
+
+
 
 **File Input for Initial Configuration**
 - Reads the initial configuration of organisms (Generation 0) from an ASCII text file.
