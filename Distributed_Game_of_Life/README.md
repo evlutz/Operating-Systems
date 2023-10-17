@@ -62,11 +62,11 @@ Regardless of these configurations if the program ran correctly `Number of set g
 
 Message types used to synchronize threads and decide game state:
 
-`RANGE`: Sent from main thread to worker threads to assign a range of rows to compute the new generation for.
-`GO`: Sent from main thread to worker threads to start computing the new generation.
-`GENDONE`: Sent from worker threads to main thread to indicate that the new generation has been computed.
-`ALLDONE`: Sent from worker threads to main, indicates pre-set number of generations have been reached
-`STOP`: Sent from main thread to worker threads to terminate the game, used if a redundant generation is reached.
+`RANGE`: Sent from main thread to worker threads to assign a range of rows to compute the new generation for. <br>
+`GO`: Sent from main thread to worker threads to start computing the new generation.<br>
+`GENDONE`: Sent from worker threads to main thread to indicate that the new generation has been computed.<br>
+`ALLDONE`: Sent from worker threads to main, indicates pre-set number of generations have been reached<br>
+`STOP`: Sent from main thread to worker threads to terminate the game, used if a redundant generation is reached.<br>
 
 
 ### Notes
