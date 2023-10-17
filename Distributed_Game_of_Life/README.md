@@ -17,15 +17,6 @@ This distributed version of John Conway's Game of Life, utilizing message passin
 - File Input for initial generation
 
 
-
-**Configurable via Command Line Arguments**
-- Accepts 3-5 command line arguments for customization:
-    - Number of threads
-    - File containing Generation 0
-    - Number of generations to play
-    - Option to print each generation (default is *False*)
-    - Option for keyboard input before proceeding (default is *False*)
-
 ## Example Run:
 ##### $ ./game_of_life 10 glider_gun.txt 120 y y
 ![Alt Text](LifeRun.gif)
@@ -53,10 +44,10 @@ To compile the 'game_of_life' with header files and abstracts, use the **makefil
 
 #### Game Boards
 
-    Game boards can be created by ant user, it consists of a grid of 1's and 0's which cannot be more than 40 rows or columns.
-    1's represent alive cells and 0's represent deadcells.
+Game boards can be created by ant user, it consists of a grid of 1's and 0's which cannot be more than 40 rows or columns.
+1's represent alive cells and 0's represent deadcells.
 
-    To create a gameboard simply create a text file and create or edit the pre installed grids under the 'Starting_Boards' directory
+To create a gameboard simply create a text file and create or edit the pre installed grids under the 'Starting_Boards' directory
            
 ## Output:
 <p>
