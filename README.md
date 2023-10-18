@@ -1,6 +1,6 @@
 # Operating-Systems
 
-### This repository holds projects focussing around the Ubuntu O.S. <br> All projects in this repo were build on *Ubuntu 22.04.03* <br> Projects in this repository focus on different aspect of an operating systems system calls: `semaphores`, `threads`, `exec`, `fork`  `multi-threading`, `synchronization`, `critical reigons`, `mutex`, `barriers`, and `message passing`
+### This repository holds projects focussing around the Ubuntu O.S. <br> All projects in this repo were build on *Ubuntu 22.04.03* <br> Projects in this repository focus on different aspect of an operating systems: `semaphores`, `threads`, `exec`, `fork`  `multi-threading`, `synchronization`, `critical reigons`, `mutex`, `barriers`, and `message passing`
 
 ## Projects:
 
@@ -20,5 +20,5 @@
 - Implements `mutual exclusion` in the critical reigon
 - Utilizes `iNode` information but also checks specifically for text files
 
-![Alt Text](SRHRun.png)
+![Alt Text](/evlutz/SRHRun.png)
 
