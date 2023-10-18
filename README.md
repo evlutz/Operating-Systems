@@ -1,6 +1,6 @@
 # Operating-Systems
 
-### This repository holds projects focussing around the Ubuntu O.S. <br> All projects in this repo were build on *Ubuntu 22.04.03* <br> Projects in this repository focus on: <br>`semaphores`<br> `multi-threading`<br>`synchronization`<br> `critical reigons`<br> `mutual exclusion`<br> `barriers`<br> `message passing`
+### This repository holds projects focussing around the Ubuntu O.S. <br> All projects in this repo were build on *Ubuntu 22.04.03* <br> Projects in this repository focus on: `semaphores`, `multi-threading`, `synchronization`, `critical reigons`, `mutual exclusion`, `barriers`, `message passing`
 
 ## Projects:
 
