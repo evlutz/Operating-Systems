@@ -20,5 +20,5 @@
 - Implements `mutual exclusion` in the critical reigon
 - Utilizes `iNode` information but also checks specifically for text files
 
-![Alt Text](/evlutz/SRHRun.png)
+![Alt Text](SRHRun.png)
 
