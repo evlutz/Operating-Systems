@@ -31,7 +31,7 @@ To compile the program with the multi-threaded architecture, use the **makefile*
 
 ***or***
 
-**$ g++ -o proj4 proj4.cpp -lpthread**
+**$ g++ -o SRH SRH.cpp -lpthread**
 
 ## Usage:
 
