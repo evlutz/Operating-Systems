@@ -15,7 +15,7 @@
 
 ## [Multiserver](https://github.com/evlutz/Operating-Systems/tree/main/Server%20Request%20Handler)
 
-- `Serial and Multi-Threaded` architecture avalible
+- `Serial and Multi-Threaded` architecture available
 - Replicates a server which all thread at some point havee to access the critical reigon
 - Implements `mutual exclusion` in the critical reigon
 - Utilizes `iNode` information but also checks specifically for text files
